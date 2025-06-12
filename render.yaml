@@ -5,7 +5,7 @@ services:
     dockerfilePath: ./Dockerfile
     scaling:
       minInstances: 1
-      maxInstances: 1
+      maxInstances: 2
       targetCPUPercent: 70
     envVars:
       - key: PORT
