@@ -9,4 +9,4 @@ ENV PORT=8080
 EXPOSE 8080
 
 # Command to run the application
-CMD ["python", "-m", "open_webui"]
+# Removed CMD to use default from base image
