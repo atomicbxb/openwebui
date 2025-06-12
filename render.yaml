@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: open-webui
+    env: docker
+    dockerfilePath: ./Dockerfile
+    scaling:
+      minInstances: 1
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: OPENAI_API_BASE_URL
+        value: https://api.heroku.com/inference
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: WEBUI_SECRET_KEY
+        generateValue: true
+    healthCheckPath: /health
