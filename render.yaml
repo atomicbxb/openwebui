@@ -22,11 +22,7 @@ services:
           property: connectionString
     healthCheckPath: /health
 
-  - type: postgres
-    name: open-webui-db
-    plan: standard
-    region: oregon
-    disk:
-      name: open-webui-data
-      mountPath: /var/lib/postgresql/data
-      sizeGB: 1
+databases:
+  - name: open-webui-db
+    databaseName: openwebui
+    user: openwebui
