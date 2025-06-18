@@ -1,2 +1,1 @@
-#openwebui
-Deploy openwebui render blueprint
+Openwebui Blueprint for Render
